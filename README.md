@@ -1,6 +1,18 @@
 # NotasTypeScript
 Mis notas de TypeScript
 
+Utilizamos el paquete nvm para tener varias versiones de npm 
+
+nvm --list 
+
+nvm  -v 
+
+nvm use (Se recomienda LTS) 
+
+npm install -g typescript
+
+# Consola
+
 tsc hello.ts  // compila a js
 
 node hello.js // corre javascript en cosola con node
