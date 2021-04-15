@@ -46,3 +46,11 @@ Ver src/
 
 Usa dos notaciones: [] y Array<tipo>
 
+
+# Tuple 
+
+Permiten expresar un arreglo con número fijo de elementos 
+
+Los tipos de datos son conocidos (diferentes)
+
+

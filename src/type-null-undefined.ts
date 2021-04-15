@@ -13,7 +13,7 @@ console.log('otheVariable',otherVariable);
 // Undefined
 
 let undefindedVariable:undefined=undefined;
-undefindedVariable = 'test';
+//undefindedVariable = 'test';
 
 // inferirlo como Any
 let otherUndefined=undefined; 

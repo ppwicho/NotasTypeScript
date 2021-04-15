@@ -7,7 +7,7 @@ console.log('nullVariable', nullVariable);
 console.log('otheVariable', otherVariable);
 // Undefined
 var undefindedVariable = undefined;
-undefindedVariable = 'test';
+//undefindedVariable = 'test';
 // inferirlo como Any
 var otherUndefined = undefined;
 console.log('undefinedVariable', undefindedVariable);
