@@ -38,4 +38,7 @@ removeComments // para quitar los comentarios del compilado
 Ver src/main.js
  
 
- 
+ # Variables Any, Void y 
+
+Ver src/
+
