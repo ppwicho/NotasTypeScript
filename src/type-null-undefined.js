@@ -13,9 +13,6 @@ var otherUndefined = undefined;
 console.log('undefinedVariable', undefindedVariable);
 console.log('otherUndefined', otherUndefined);
 // null y undefined se pueden considerar subtipos tipo any 
-//-- strictNullChecks
-// si muestra error el tipo estático TS, modificar tsconfig.json
-/// tsc src/type-null-undefined.ts --strictNullChecks
 var albumName;
-//albumName=null;
-//albumName=undefined;
+albumName = null;
+albumName = undefined;

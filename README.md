@@ -38,7 +38,11 @@ removeComments // para quitar los comentarios del compilado
 Ver src/main.js
  
 
- # Variables Any, Void y 
+ # Variables Any, Void , null y undefined
 
 Ver src/
+
+# Array en TypeScript 
+
+Usa dos notaciones: [] y Array<tipo>
 
