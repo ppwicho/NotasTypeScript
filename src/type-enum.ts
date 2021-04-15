@@ -1,6 +1,6 @@
 // Orientacion para Fotografias 
 
-const landscape = 0; 
+//const landscape = 0; 
 
 const portait = 1 ; 
 

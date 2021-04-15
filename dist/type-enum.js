@@ -1,5 +1,5 @@
 // Orientacion para Fotografias 
-var landscape = 0;
+//const landscape = 0; 
 var portait = 1;
 var square = 2;
 var panorama = 3;
