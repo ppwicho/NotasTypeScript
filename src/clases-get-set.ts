@@ -9,23 +9,43 @@ enum PhotoOrientation{
 
 class Picture{
     // Propiedades
-    private id:number; // A partir de ECMA 6 se puede usar # para declarar privado
-    private title:string;
-    private orientation:PhotoOrientation;
+    private _id:number; // A partir de ECMA 6 se puede usar # para declarar privado
+    private _title:string;
+    private _orientation:PhotoOrientation;
 
     public constructor(id:number,
                 title:string,
                 orientation:PhotoOrientation){
-                    this.id=id;
-                    this.title=title;
-                    this.orientation=orientation;
-                }
+        this._id=id;
+        this._title=title;
+        this._orientation=orientation;
+    }
+
+    get id() {
+        return this._id;
+    }
+    set id(id: number) {
+        this._id = id;
+    }
+    get title() {
+        return this._title;
+    }
+    set title(title: string) {
+        this._title = title;
+    }
+    get orientation() {
+        return this._orientation;
+    }
+    set orientation(o: PhotoOrientation) {
+        this._orientation = o;
+    }
+        
     // Comportamiento 
 
     public toString(){
-        return `[id: ${this.id},
-                title: ${this.title},
-                orientation:${this.orientation}]`;
+        return `[id: ${this._id},
+                title: ${this._title},
+                orientation:${this._orientation}]`;
     }
 }
 class Album{
@@ -53,8 +73,10 @@ console.log('album',album);
 
 // Accediendo a los miembros publicos 
 
-//picture.id=100; // privado
-//picture.title='Another Title'; // privado no funciona mejor usar # ecmascript 6
-//console.log('album',album);
+console.log('picture.id',picture.id); // get id()
+
+picture.id=100; // hacemos uso de los metodos accesores
+picture.title='Another Title'; // privado no funciona mejor usar # ecmascript 6
+console.log('album',album);
 
 
