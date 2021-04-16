@@ -9,7 +9,7 @@ enum PhotoOrientation{
 
 //Superclase
 
-class Item{
+abstract class Item{
     protected _id:number; // Si usamos private no podemos acceder desde otra clase
     protected _title:string; // protected 
 
@@ -32,7 +32,9 @@ class Item{
     }
 }
 
+
 class Picture extends Item{
+    public static photoOrientation=PhotoOrientation;
     // Propiedades
     private _orientation:PhotoOrientation;
 
@@ -91,4 +93,13 @@ picture.id=100; // hacemos uso de los metodos accesores
 picture.title='Another Title'; // privado no funciona mejor usar # ecmascript 6
 console.log('album',album);
 
+// Intentemos ingresar una nueva clase a Item (que debería ser abstracto)
+
+const item = new Item(1,'Test title'); // No deja asignar por que es abstracta Item
+console.log('item',item);
+
+
+// Probar el miembro estático 
+
+console.log('PhotoOrientation',Picture.photoOrientation.Landscape);
 
