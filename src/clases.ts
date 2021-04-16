@@ -29,17 +29,17 @@ class Picture{
     }
 }
 class Album{
-    id:number;
-    title:string;
-    pictures:Picture[]; 
+    public id:number;
+    public title:string;
+    public pictures:Picture[]; 
 
-    constructor(id:number,title:string){
+    public constructor(id:number,title:string){
         this.id=id;
         this.title=title;
         this.pictures=[];
     }
 
-    addPicture(picture:Picture){
+    public addPicture(picture:Picture){
         this.pictures.push(picture);
     }
 }
