@@ -10,7 +10,7 @@ enum PhotoOrientation{
 //Superclase
 
 abstract class Item{
-    protected _id:number; // Si usamos private no podemos acceder desde otra clase
+    protected readonly _id:number; // Si usamos private no podemos acceder desde otra clase
     protected _title:string; // protected 
 
     constructor(id:number,title:string){
