@@ -121,6 +121,44 @@ Módulos AMD, System, ES2015
 - sube un directorio dentro de la estructura y busca
 - ... 
 
+# Webpack 
+
+Para crear el package.json
+
+`npm init -y`
+
+
+`npm install typescript webpack webpack-cli --save-dev `
+
+--save-dev nos guarda dependencias persistente en package.json 
+
+Crear archivo webpack.config.js
+
+Para que webpack lea typescript: 
+
+`npm install ts-loader --save-dev ` 
+
+en webpack.config 
+
+```
+    module: {
+        rules: [
+            {
+                test: /\.ts$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            }
+
+
+```
+
+`npm run build`
+
+Para correr el codigo 
+
+`node dist/bundle.js`
+
+
 
 
 
