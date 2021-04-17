@@ -73,19 +73,18 @@ Módulos AMD, System, ES2015
 
 ### tsconfig.json 
 
-`moduleResolution: "node" or "classic"`
-`traceResolution: "true"`  Nos da debug de la resolucion de modulos en node. 
+- `moduleResolution: "node" or "classic"`
+
+-  `traceResolution: "true"`  Nos da debug de la resolucion de modulos en node. 
 
 ### Node:Import Relativo 
 
 `import {Picture} from './picture' ` 
 
-busca picture.ts 
-busca picture.tsx
-busca picture.d.ts 
-
-busca package.json ("typings") 
-
+- busca picture.ts 
+- busca picture.tsx
+- busca picture.d.ts 
+- busca package.json ("typings") 
 - busca index.ts 
 - busca index.tsx
 - busca index.d.ts
@@ -95,36 +94,32 @@ busca package.json ("typings")
 
 `import {Picture} from 'picture' ` 
 
-busca picture.ts 
-busca picture.tsx
-busca picture.d.ts 
-
-busca package.json ("typings") 
-
+- busca picture.ts 
+- busca picture.tsx
+- busca picture.d.ts 
+- busca package.json ("typings") 
 - busca index.ts 
+- Sube un directorio ../ busca lo mismo. 
 
-Sube un directorio ../ busca lo mismo. 
-
-En los archivos ts. 
 
 ### Classic: Import Relativo 
 
 `import {Picture} from './picture' ` 
 
-busca picture.ts 
-busca picture.d.ts 
+- busca picture.ts 
+-  busca picture.d.ts 
 
 ### Clasic: Import No-Relativo 
 
 `import {Picture} from 'picture' ` 
 
-busca picture.ts 
-busca picture.d.ts 
-sube un directorio dentro de la estructura y busca
-busca picture.ts 
-busca picture.d.ts 
-sube un directorio dentro de la estructura y busca
-... 
+- busca picture.ts 
+- busca picture.d.ts 
+- sube un directorio dentro de la estructura y busca
+- busca picture.ts 
+- busca picture.d.ts 
+- sube un directorio dentro de la estructura y busca
+- ... 
 
 
 
