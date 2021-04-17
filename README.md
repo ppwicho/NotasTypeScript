@@ -23,7 +23,7 @@ Utilizamos el paquete nvm para tener varias versiones de npm
 
 En `TSCONFIG` podemos definir cosas increibles como 
 
-`extends
+```extends
 
 compileOnSave
 
@@ -31,7 +31,7 @@ include
 
 exclude 
 
-removeComments // para quitar los comentarios del compilado `
+removeComments // para quitar los comentarios del compilado ```
 
 # Tipeado en TypeScript: Variables Explicitas y Variables Implicitas 
 
