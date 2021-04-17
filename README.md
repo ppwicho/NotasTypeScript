@@ -159,7 +159,8 @@ Para correr el codigo
 `node dist/bundle.js`
 
 
+# Pero las mejores notas las encuentras en 
 
-
+https://www.notion.so/Curso-de-fundamentos-de-TypeScript-b86f48d1310746a182d6de6a343f685c#21d39d1363ac41dea41a2c05794ea595
 
 
