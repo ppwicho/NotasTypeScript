@@ -89,7 +89,19 @@ busca package.json ("typings")
 - busca index.d.ts
 
 
+* Node:Import No Relativo * 
 
+`import {Picture} from 'picture' ` 
+
+busca picture.ts 
+busca picture.tsx
+busca picture.d.ts 
+
+busca package.json ("typings") 
+
+- busca index.ts 
+
+Sube un directorio ../ busca lo mismo. 
 
 En los archivos ts. 
 
