@@ -3,27 +3,27 @@ Mis notas de TypeScript
 
 Utilizamos el paquete nvm para tener varias versiones de npm 
 
-nvm --list 
+`nvm --list` 
 
-nvm  -v 
+`nvm  -v` 
 
-nvm use (Se recomienda LTS) 
+`nvm use` (Se recomienda LTS) 
 
-npm install -g typescript
+`npm install -g typescript`
 
 # Consola
 
-tsc hello.ts  // compila a js
+`tsc hello.ts`  // compila a js
 
-node hello.js // corre javascript en cosola con node
+`node hello.js` // corre javascript en cosola con node
 
-tsc --watc // visualiza y compila en tiempo real
+`tsc --watch` // visualiza y compila en tiempo real
 
-tsc --init // crea el archivo tsconfig.json 
+`tsc --init` // crea el archivo tsconfig.json 
 
-En TSCONFIG podemos definir cosas increibles como 
+En `TSCONFIG` podemos definir cosas increibles como 
 
-extends
+`extends
 
 compileOnSave
 
@@ -31,7 +31,7 @@ include
 
 exclude 
 
-removeComments // para quitar los comentarios del compilado
+removeComments // para quitar los comentarios del compilado `
 
 # Tipeado en TypeScript: Variables Explicitas y Variables Implicitas 
 

@@ -15,6 +15,7 @@ export class User {
     }
     removeAlbum(album:Album):Album | undefined{
         //Buscar el objeto Album y eliminarlo
+        // Para utilizar findIndex se debe actualizar tsconfig con es2015
         const index=this.album.findIndex(a => a.id === album.id);
         let deletedAlbum;
         if(index>=0){
