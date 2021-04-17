@@ -31,7 +31,9 @@ include
 
 exclude 
 
-removeComments // para quitar los comentarios del compilado ```
+removeComments // para quitar los comentarios del compilado 
+
+```
 
 # Tipeado en TypeScript: Variables Explicitas y Variables Implicitas 
 
