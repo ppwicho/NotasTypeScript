@@ -62,8 +62,57 @@ Los tipos de datos son conocidos (diferentes)
 
 # Estrategias de resolución de modulos 
 
-`tsc --moduleResolution node`
+`tsc --moduleResolution node` -- Más opciones de configuración
+
+Modulos CommonJS o UMD  
 
 
 
-`tsc --moduleResolution classic`
+`tsc --moduleResolution classic` -- Poco configurable
+
+Módulos AMD, System, ES2015 
+
+
+
+* Node:Import Relativo * 
+
+`import {Picture} from './picture' ` 
+
+busca picture.ts 
+busca picture.tsx
+busca picture.d.ts 
+
+busca package.json ("typings") 
+
+- busca index.ts 
+- busca index.tsx
+- busca index.d.ts
+
+
+
+
+En los archivos ts. 
+
+* Classic: Import Relativo * 
+
+`import {Picture} from './picture' ` 
+
+busca picture.ts 
+busca picture.d.ts 
+
+* Clasic: Import No-Relativo *
+
+`import {Picture} from 'picture' ` 
+
+busca picture.ts 
+busca picture.d.ts 
+sube un directorio dentro de la estructura y busca
+busca picture.ts 
+busca picture.d.ts 
+sube un directorio dentro de la estructura y busca
+... 
+
+
+
+
+
