@@ -54,3 +54,14 @@ Permiten expresar un arreglo con número fijo de elementos
 Los tipos de datos son conocidos (diferentes)
 
 
+# Para trabajar con proyectos inmersos
+
+`tsc --project photo-app --watch` 
+
+# Estrategias de resolución de modulos 
+
+`tsc --moduleResolution node`
+
+
+
+`tsc --moduleResolution classic`
