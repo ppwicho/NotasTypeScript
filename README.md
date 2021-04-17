@@ -67,14 +67,16 @@ Los tipos de datos son conocidos (diferentes)
 Modulos CommonJS o UMD  
 
 
-
 `tsc --moduleResolution classic` -- Poco configurable
 
 Módulos AMD, System, ES2015 
 
+### tsconfig.json 
 
+`moduleResolution: "node" or "classic"`
+`traceResolution: "true"`  Nos da debug de la resolucion de modulos en node. 
 
-* Node:Import Relativo * 
+### Node:Import Relativo 
 
 `import {Picture} from './picture' ` 
 
@@ -89,7 +91,7 @@ busca package.json ("typings")
 - busca index.d.ts
 
 
-* Node:Import No Relativo * 
+### Node:Import No Relativo 
 
 `import {Picture} from 'picture' ` 
 
@@ -105,14 +107,14 @@ Sube un directorio ../ busca lo mismo.
 
 En los archivos ts. 
 
-* Classic: Import Relativo * 
+### Classic: Import Relativo 
 
 `import {Picture} from './picture' ` 
 
 busca picture.ts 
 busca picture.d.ts 
 
-* Clasic: Import No-Relativo *
+### Clasic: Import No-Relativo 
 
 `import {Picture} from 'picture' ` 
 
